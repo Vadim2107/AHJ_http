@@ -23,12 +23,12 @@ export default class Task {
       const taskItem = document.createElement('tr');
       taskItem.classList.add('product-item');
       taskItem.innerHTML = `
-               <td class="task-name">
+                <td class="task-name">
                     ${task.name}
                     <div class="task-description hidden">
                         <i class="fas fa-spinner fa-pulse"></i>
                     </div>
-               </td>
+                </td>
                 <td class="task-created">${task.created}</td>
                 <td class="task-move">
                     <div class="task-edit">
@@ -75,8 +75,10 @@ export default class Task {
   checkTask(task, circle) {
     circle.addEventListener('click', () => {
       if (!task.status) {
+        // eslint-disable-next-line no-param-reassign
         task.status = true;
       } else {
+        // eslint-disable-next-line no-param-reassign
         task.status = false;
       }
 
@@ -90,6 +92,7 @@ export default class Task {
         if (elem.querySelector('.task-description').classList.contains('hidden')) {
           elem.querySelector('.task-description').classList.remove('hidden');
           this.model.getById(task.id).then((data) => {
+            // eslint-disable-next-line no-param-reassign
             elem.querySelector('.task-description').textContent = data.description;
           });
         } else {
