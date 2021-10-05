@@ -30,7 +30,7 @@ export default class Form {
   }
 
   changeTask(task) {
-    this.createForm('Изменить задачу');
+    this.createForm('Изменить тикет');
     const taskName = this.form.querySelector('.name');
     const taskDesc = this.form.querySelector('.description');
     taskName.value = task.name;

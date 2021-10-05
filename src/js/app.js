@@ -18,6 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 addTask.addEventListener('click', () => {
   const addForm = new Form(modalContainer, serverResponse);
-  addForm.createForm('Добавить задачу');
+  addForm.createForm('Добавить тикет');
   addForm.submitForm();
 });
