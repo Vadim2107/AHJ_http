@@ -34,7 +34,7 @@ body {
 }
 
 .btn-add:hover, .btn-submit:hover, .btn-delete:hover {
-    background-color: cornflowerblue;
+    background-color: rgb(85, 167, 18);
     color: #fff;
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .task-edit:hover, .task-status:hover {
-    color: cornflowerblue;
+    color: rgb(85, 167, 18);
 }
 
 .task-delete:hover {

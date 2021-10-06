@@ -2,8 +2,8 @@ import Task from './Task';
 
 export default class Model {
   constructor() {
-    // this.serverURL = 'https://ahj-httpserver.herokuapp.com/';
-    this.serverURL = 'https://localhost:7070/';
+    this.serverURL = 'https://ahj-httpserver.herokuapp.com/';
+    // this.serverURL = 'https://localhost:7071/';
   }
 
   start() {
